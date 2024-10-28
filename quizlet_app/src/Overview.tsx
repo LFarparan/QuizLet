@@ -12,7 +12,7 @@ export default function Overview({setView}: Props) {
   return (
     <div>
       <button className="signs" onClick={()=>{setView('signup')}}>Sign In</button>
-      <button className="signs">Sign Up</button>
+      <button className="signs" onClick={()=>{setView('signin')}}>Sign Up</button>
     </div>
   )
 }

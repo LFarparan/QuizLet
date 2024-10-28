@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Overview from './Overview'
 import SignUp from './SignUp';
+import SignIn from './SignIn';
 
 
 
@@ -12,7 +13,9 @@ function App() {
     <>
       <h1> QuizLet </h1>
       { (view == 'default') ? <Overview setView = {setView}/> :
-        (view == 'signup')? <SignUp/> : <SignUp/>}
+        (view == 'signup')? <SignUp/> : 
+        (view == 'signin')? <SignIn/> :
+        <Overview setView={setView}/>}
       
     </>
   )
